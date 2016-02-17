@@ -1,10 +1,10 @@
 {
   "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BD9DADA851FADC6FE5D8C8A87E9DA530EE82052B+++CD83212",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
-    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F" : {
+    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1AE6B1E" : {
 
     },
-    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++2406+++1AE6B1E" : {
+    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F" : {
 
     },
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++5E56DA5" : {
@@ -12,7 +12,7 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++2406+++1AE6B1E" : 0,
+    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1AE6B1E" : 0,
     "BD9DADA851FADC6FE5D8C8A87E9DA530EE82052B+++CD83212" : 0,
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F" : 0,
     "CDD4598E4B37CC6423BACDC09794C2106199CE7A+++D0C9409" : 0,
@@ -20,7 +20,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A63E08B7-BB2C-49D1-A694-A712138F3A81",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++2406+++1AE6B1E" : "weixin-withHuanXin\/iOSAppTemplate\/Dependcy\/AudioCoder\/",
+    "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1AE6B1E" : "weixin-withHuanXin\/iOSAppTemplate\/Dependcy\/AudioCoder\/",
     "BD9DADA851FADC6FE5D8C8A87E9DA530EE82052B+++CD83212" : "weixin-withHuanXin\/",
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F" : "iOSAppTemplate\/iOSAppTemplate\/UIDemoCommonClass\/GJCFUitils\/",
     "CDD4598E4B37CC6423BACDC09794C2106199CE7A+++D0C9409" : "iOSAppTemplate\/",
@@ -43,12 +43,12 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.64.5:8888\/svn\/Mobile",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c1b34985-89f7-4ad2-b6ed-32456ccb691a++2406+++1AE6B1E"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.64.5:8888\/svn\/Mobile",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1AE6B1E"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.64.5:8888\/svn\/Mobile",
