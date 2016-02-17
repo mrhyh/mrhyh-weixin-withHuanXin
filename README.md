@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 # iOSAppTemplate
 高仿微信UI，着重点在于设置界面的抽象和IM界面。
-=======
+
 # weixin-withHuanXin
 
 Welcome to the weixin-withHuanXin wiki!
@@ -20,4 +20,5 @@ https://github.com/mrhyh/ZYChat
 更新进度
 
 1.0 添加环信的SDK，添加了一个文字单聊的功能！
->>>>>>> origin/master
+  1.0.1 可以收发图片，但是图片显示有严重问题！
+  1.0.1 完善图片收发的问题！
