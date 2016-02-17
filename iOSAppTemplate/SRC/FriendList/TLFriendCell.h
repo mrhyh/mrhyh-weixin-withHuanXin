@@ -9,10 +9,13 @@
 #import "CommonTableViewCell.h"
 #import "TLUser.h"
 #import "EaseImageView.h"
+#import "MKNumberBadgeView.h"
 
 @interface TLFriendCell : CommonTableViewCell
 
 @property (nonatomic, strong) TLUser *user;
 @property (nonatomic, strong) EaseImageView *avatarView;
+
+@property (nonatomic, assign) NSInteger unreadCount;
 
 @end

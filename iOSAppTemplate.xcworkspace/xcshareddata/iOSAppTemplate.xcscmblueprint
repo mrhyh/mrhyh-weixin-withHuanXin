@@ -1,5 +1,5 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BD9DADA851FADC6FE5D8C8A87E9DA530EE82052B+++CD83212",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "04320C70EEE9A51CA4BF6F1DB6C3D7875CF2375E+++CD83212",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1AE6B1E" : {
 
@@ -12,16 +12,16 @@
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "04320C70EEE9A51CA4BF6F1DB6C3D7875CF2375E+++CD83212" : 0,
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1AE6B1E" : 0,
-    "BD9DADA851FADC6FE5D8C8A87E9DA530EE82052B+++CD83212" : 0,
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F" : 0,
     "CDD4598E4B37CC6423BACDC09794C2106199CE7A+++D0C9409" : 0,
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++5E56DA5" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A63E08B7-BB2C-49D1-A694-A712138F3A81",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "04320C70EEE9A51CA4BF6F1DB6C3D7875CF2375E+++CD83212" : "weixin-withHuanXin\/",
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1AE6B1E" : "weixin-withHuanXin\/iOSAppTemplate\/Dependcy\/AudioCoder\/",
-    "BD9DADA851FADC6FE5D8C8A87E9DA530EE82052B+++CD83212" : "weixin-withHuanXin\/",
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++1A1D82F" : "iOSAppTemplate\/iOSAppTemplate\/UIDemoCommonClass\/GJCFUitils\/",
     "CDD4598E4B37CC6423BACDC09794C2106199CE7A+++D0C9409" : "iOSAppTemplate\/",
     "c1b34985-89f7-4ad2-b6ed-32456ccb691a++5725+++5E56DA5" : "iOSAppTemplate\/iOSAppTemplate\/UIDemoCommonClass\/GJCFUitils\/"
@@ -33,7 +33,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mrhyh\/weixin-withHuanXin.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BD9DADA851FADC6FE5D8C8A87E9DA530EE82052B+++CD83212"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "04320C70EEE9A51CA4BF6F1DB6C3D7875CF2375E+++CD83212"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mrhyh\/iOSAppTemplate.git",

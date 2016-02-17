@@ -16,5 +16,6 @@
 @property (nonatomic, strong) NSMutableArray *data;             // 格式化（排序）的好友列表数据
 @property (nonatomic, strong) NSMutableArray *section;          // 拼音首字母列表
 
+- (void)reloadApplyView;
 
 @end

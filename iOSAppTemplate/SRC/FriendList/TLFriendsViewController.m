@@ -21,6 +21,8 @@
 
 #import "ApplyViewController.h"
 #import "TLChatViewController.h"
+#import "UIViewController+HUD.h"
+
 
 @interface TLFriendsViewController () <UISearchBarDelegate, IChatManagerDelegate, EMCallManagerDelegate>
 
@@ -150,6 +152,8 @@
         [cell setUser:user];
         [cell setTopLineStyle:CellLineStyleNone];
         cell.avatarView.badge = self.unapplyCount;
+        cell.unreadCount = 3;
+        
         indexPath.row == _functionGroup.itemsCount - 1 ? [cell setBottomLineStyle:CellLineStyleNone] :[cell setBottomLineStyle:CellLineStyleDefault];
     }
     else {
@@ -255,6 +259,48 @@
 
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+}
+
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
+}
+
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSDictionary *loginInfo = [[[EaseMob sharedInstance] chatManager] loginInfo];
+        NSString *loginUsername = [loginInfo objectForKey:kSDKUsername];
+        
+        NSArray *array = [_data objectAtIndex:indexPath.section - 1];
+        TLUser *user = [array objectAtIndex:indexPath.row];
+        //EMConversation *conversation = [_data objectAtIndex:indexPath.row];
+        
+        if ([user.username isEqualToString:loginUsername]) {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"prompt", @"Prompt") message:NSLocalizedString(@"friend.notDeleteSelf", @"can't delete self") delegate:nil cancelButtonTitle:NSLocalizedString(@"ok", @"OK") otherButtonTitles:nil, nil];
+            [alertView show];
+            
+            return;
+        }
+        
+        EMError *error = nil;
+        [[EaseMob sharedInstance].chatManager removeBuddy:user.username removeFromRemote:YES error:&error];
+        if (!error) {
+            [[EaseMob sharedInstance].chatManager removeConversationByChatter:user.username deleteMessages:YES append2Chat:YES];
+            
+            [tableView beginUpdates];
+            [[_data objectAtIndex:(indexPath.section - 1)] removeObjectAtIndex:indexPath.row];
+            [_data removeObject:user];
+            [tableView  deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView  endUpdates];
+        }
+        else{
+            [self showHint:[NSString stringWithFormat:NSLocalizedString(@"deleteFailed", @"Delete failed:%@"), error.description]];
+            [tableView reloadData];
+        }
+    }
 }
 
 #pragma mark - UISearchBarDelegate

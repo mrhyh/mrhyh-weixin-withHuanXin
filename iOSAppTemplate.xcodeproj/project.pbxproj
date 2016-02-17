@@ -326,6 +326,10 @@
 		EB71911F1C61ECBE00DECE64 /* tabbarBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7190701C61ECBE00DECE64 /* tabbarBackground@2x.png */; };
 		EB7191201C61ECBE00DECE64 /* tabbarSelectBg.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7190711C61ECBE00DECE64 /* tabbarSelectBg.png */; };
 		EB7191211C61ECBE00DECE64 /* tabbarSelectBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB7190721C61ECBE00DECE64 /* tabbarSelectBg@2x.png */; };
+		EB7DAAE11C7410A3002B46D0 /* AppDelegate+EaseMob.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DAAE01C7410A3002B46D0 /* AppDelegate+EaseMob.m */; };
+		EB7DAAE41C741133002B46D0 /* AppDelegate+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DAAE31C741133002B46D0 /* AppDelegate+Parse.m */; };
+		EB7DAAED1C743F07002B46D0 /* MKNumberBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DAAEC1C743F07002B46D0 /* MKNumberBadgeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EB7DAAEF1C7447BA002B46D0 /* EaseSDKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7DAAEE1C7447BA002B46D0 /* EaseSDKHelper.m */; };
 		EB866CA41C5F0ABF005824A4 /* amrFileCodec.mm in Sources */ = {isa = PBXBuildFile; fileRef = EB866C991C5F0ABF005824A4 /* amrFileCodec.mm */; };
 		EB866CA51C5F0ABF005824A4 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB866C9E1C5F0ABF005824A4 /* libopencore-amrnb.a */; };
 		EB866CA61C5F0ABF005824A4 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB866C9F1C5F0ABF005824A4 /* libopencore-amrwb.a */; };
@@ -813,6 +817,14 @@
 		EB7190701C61ECBE00DECE64 /* tabbarBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarBackground@2x.png"; sourceTree = "<group>"; };
 		EB7190711C61ECBE00DECE64 /* tabbarSelectBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbarSelectBg.png; sourceTree = "<group>"; };
 		EB7190721C61ECBE00DECE64 /* tabbarSelectBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbarSelectBg@2x.png"; sourceTree = "<group>"; };
+		EB7DAADF1C7410A3002B46D0 /* AppDelegate+EaseMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+EaseMob.h"; sourceTree = "<group>"; };
+		EB7DAAE01C7410A3002B46D0 /* AppDelegate+EaseMob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+EaseMob.m"; sourceTree = "<group>"; };
+		EB7DAAE21C741133002B46D0 /* AppDelegate+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Parse.h"; sourceTree = "<group>"; };
+		EB7DAAE31C741133002B46D0 /* AppDelegate+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Parse.m"; sourceTree = "<group>"; };
+		EB7DAAE61C7411E1002B46D0 /* EaseSDKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseSDKHelper.h; sourceTree = "<group>"; };
+		EB7DAAEB1C743F07002B46D0 /* MKNumberBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNumberBadgeView.h; sourceTree = "<group>"; };
+		EB7DAAEC1C743F07002B46D0 /* MKNumberBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNumberBadgeView.m; sourceTree = "<group>"; };
+		EB7DAAEE1C7447BA002B46D0 /* EaseSDKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseSDKHelper.m; sourceTree = "<group>"; };
 		EB866C981C5F0ABF005824A4 /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
 		EB866C991C5F0ABF005824A4 /* amrFileCodec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = amrFileCodec.mm; sourceTree = "<group>"; };
 		EB866C9A1C5F0ABF005824A4 /* dec_if.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dec_if.h; sourceTree = "<group>"; };
@@ -979,12 +991,17 @@
 		2D1BA70E1BA578D2009BB687 /* iOSAppTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				EB7DAAE51C7411E1002B46D0 /* EasyUI */,
 				EB718F831C61D53700DECE64 /* Custom */,
 				EB718F211C61CC5C00DECE64 /* 3rdparty */,
 				EB718F171C61C9FA00DECE64 /* Core Data */,
 				EB5DD1361C5E480F002A4F24 /* Dependcy */,
 				2D1BA7131BA578D2009BB687 /* AppDelegate.h */,
 				2D1BA7141BA578D2009BB687 /* AppDelegate.m */,
+				EB7DAADF1C7410A3002B46D0 /* AppDelegate+EaseMob.h */,
+				EB7DAAE01C7410A3002B46D0 /* AppDelegate+EaseMob.m */,
+				EB7DAAE21C741133002B46D0 /* AppDelegate+Parse.h */,
+				EB7DAAE31C741133002B46D0 /* AppDelegate+Parse.m */,
 				EB12D9761C564A9700CE9DED /* Header.h */,
 				EB12D9591C56491C00CE9DED /* LoginViewController */,
 				C265A7351BCDF88D00079AD9 /* Global */,
@@ -1848,6 +1865,7 @@
 		EB718F831C61D53700DECE64 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				EB7DAAEA1C743F07002B46D0 /* MKNumberBadgeView */,
 				EB718F861C61D53700DECE64 /* EMSearchBar.h */,
 				EB718F871C61D53700DECE64 /* EMSearchBar.m */,
 				EB718F881C61D53700DECE64 /* EMTextView.h */,
@@ -2192,6 +2210,24 @@
 				EB7190721C61ECBE00DECE64 /* tabbarSelectBg@2x.png */,
 			);
 			path = tabbar;
+			sourceTree = "<group>";
+		};
+		EB7DAAE51C7411E1002B46D0 /* EasyUI */ = {
+			isa = PBXGroup;
+			children = (
+				EB7DAAE61C7411E1002B46D0 /* EaseSDKHelper.h */,
+				EB7DAAEE1C7447BA002B46D0 /* EaseSDKHelper.m */,
+			);
+			path = EasyUI;
+			sourceTree = "<group>";
+		};
+		EB7DAAEA1C743F07002B46D0 /* MKNumberBadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7DAAEB1C743F07002B46D0 /* MKNumberBadgeView.h */,
+				EB7DAAEC1C743F07002B46D0 /* MKNumberBadgeView.m */,
+			);
+			path = MKNumberBadgeView;
 			sourceTree = "<group>";
 		};
 		EB866C971C5F0ABF005824A4 /* AudioCoder */ = {
@@ -2829,6 +2865,7 @@
 				EB718F0E1C61C8FB00DECE64 /* ApplyFriendCell.m in Sources */,
 				C26267F91BD4872B0021760F /* TLChatBoxFaceView.m in Sources */,
 				C265A7611BCDFB4000079AD9 /* TLNavigationController.m in Sources */,
+				EB7DAAED1C743F07002B46D0 /* MKNumberBadgeView.m in Sources */,
 				EB866CFF1C5F0C31005824A4 /* GJCFStringUitil.m in Sources */,
 				EB866D271C5F1FC2005824A4 /* AFURLRequestSerialization.m in Sources */,
 				C265A7661BCDFB4000079AD9 /* UIImage+TL.m in Sources */,
@@ -2857,11 +2894,13 @@
 				C265A7AC1BCDFB4E00079AD9 /* TLConversation.m in Sources */,
 				C26F8D491BD09C380096A3EB /* TLMessage.m in Sources */,
 				EB866D241C5F1FC2005824A4 /* AFNetworkReachabilityManager.m in Sources */,
+				EB7DAAEF1C7447BA002B46D0 /* EaseSDKHelper.m in Sources */,
 				C265A7AF1BCDFB4E00079AD9 /* TLDetailsSettingViewController.m in Sources */,
 				C26F8D571BD0D9150096A3EB /* TLTextMessageCell.m in Sources */,
 				C265A7681BCDFB4000079AD9 /* iOSAppTemplate.xcdatamodeld in Sources */,
 				EB866CC91C5F0B6C005824A4 /* GJCFAudioFileUitil.m in Sources */,
 				C265A7431BCDF88D00079AD9 /* TLUIHelper.m in Sources */,
+				EB7DAAE41C741133002B46D0 /* AppDelegate+Parse.m in Sources */,
 				EB866CA81C5F0ABF005824A4 /* wav.mm in Sources */,
 				EB12D9711C564A4E00CE9DED /* NSDateFormatter+Category.m in Sources */,
 				EB699A8B1C64614D0029A4FC /* GroupSettingViewController.m in Sources */,
@@ -2883,6 +2922,7 @@
 				C26267FF1BD4D9480021760F /* TLChatBoxFaceMenuView.m in Sources */,
 				EB866D0C1C5F0CE9005824A4 /* GJCFFileDownloadTask.m in Sources */,
 				C265A8051BCDFD3900079AD9 /* TLSetting.m in Sources */,
+				EB7DAAE11C7410A3002B46D0 /* AppDelegate+EaseMob.m in Sources */,
 				EB12D95D1C56493D00CE9DED /* LoginViewController.m in Sources */,
 				EB866CFD1C5F0C31005824A4 /* GJCFQuickCacheUitil.m in Sources */,
 				C265A7AA1BCDFB4E00079AD9 /* TLChatViewController.m in Sources */,

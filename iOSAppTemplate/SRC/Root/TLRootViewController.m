@@ -15,13 +15,14 @@
 #import "TLMineViewController.h"
 #import "loginViewController.h"
 #import "UserProfileManager.h"
+#import "ApplyViewController.h"
 
 //两次提示的默认间隔
 static const CGFloat kDefaultPlaySoundInterval = 3.0;
 static NSString *kMessageType = @"MessageType";
 static NSString *kConversationChatter = @"ConversationChatter";
 
-@interface TLRootViewController ()<EMChatManagerChatDelegate>
+@interface TLRootViewController ()<EMChatManagerChatDelegate, IChatManagerDelegate>
 
 @property (nonatomic, strong) TLConversationViewController *conversationVC;
 @property (nonatomic, strong) TLFriendsViewController *friendsVC;
@@ -41,6 +42,7 @@ static NSString *kConversationChatter = @"ConversationChatter";
     [self.tabBar setBackgroundColor:DEFAULT_SEARCHBAR_COLOR];
     [self.tabBar setTintColor:DEFAULT_GREEN_COLOR];
     
+    [self initHuanXin];
 
     TLNavigationController *convNavC = [[TLNavigationController alloc] initWithRootViewController:self.conversationVC];
     TLNavigationController *friendNavC = [[TLNavigationController alloc] initWithRootViewController:self.friendsVC];
@@ -263,5 +265,84 @@ static NSString *kConversationChatter = @"ConversationChatter";
     //    application.applicationIconBadgeNumber += 1;
 }
 
+- (void)initHuanXin{
+    //获取未读消息数，此时并没有把self注册为SDK的delegate，读取出的未读数是上次退出程序时的
+    //    [self didUnreadMessagesCountChanged];
+#warning 把self注册为SDK的delegate
+    [self registerNotifications];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupUntreatedApplyCount) name:@"setupUntreatedApplyCount" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(callOutWithChatter:) name:@"callOutWithChatter" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(callControllerClose:) name:@"callControllerClose" object:nil];
+}
 
+#pragma mark - private
+
+-(void)registerNotifications
+{
+    [self unregisterNotifications];
+    
+    [[EaseMob sharedInstance].chatManager addDelegate:self delegateQueue:nil];
+    [[EaseMob sharedInstance].callManager addDelegate:self delegateQueue:nil];
+}
+
+-(void)unregisterNotifications
+{
+    [[EaseMob sharedInstance].chatManager removeDelegate:self];
+    [[EaseMob sharedInstance].callManager removeDelegate:self];
+}
+
+
+// 统计未读消息数
+-(void)setupUnreadMessageCount
+{
+    NSArray *conversations = [[[EaseMob sharedInstance] chatManager] conversations];
+    NSInteger unreadCount = 0;
+    for (EMConversation *conversation in conversations) {
+        unreadCount += conversation.unreadMessagesCount;
+    }
+    if (_conversationVC) {
+        if (unreadCount > 0) {
+            _conversationVC.tabBarItem.badgeValue = [NSString stringWithFormat:@"%i",(int)unreadCount];
+        }else{
+            _conversationVC.tabBarItem.badgeValue = nil;
+        }
+    }
+    
+    UIApplication *application = [UIApplication sharedApplication];
+    [application setApplicationIconBadgeNumber:unreadCount];
+}
+
+- (void)setupUntreatedApplyCount
+{
+    NSInteger unreadCount = [[[ApplyViewController shareController] dataSource] count];
+    if (_friendsVC) {
+        if (unreadCount > 0) {
+            _friendsVC.tabBarItem.badgeValue = [NSString stringWithFormat:@"%i",(int)unreadCount];
+        }else{
+            _friendsVC.tabBarItem.badgeValue = nil;
+        }
+    }
+}
+
+#pragma mark - IChatManagerDelegate 好友变化
+
+- (void)didReceiveBuddyRequest:(NSString *)username
+                       message:(NSString *)message
+{
+#if !TARGET_IPHONE_SIMULATOR
+    [self playSoundAndVibration];
+    
+    BOOL isAppActivity = [[UIApplication sharedApplication] applicationState] == UIApplicationStateActive;
+    if (!isAppActivity) {
+        //发送本地推送
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        notification.fireDate = [NSDate date]; //触发通知的时间
+        notification.alertBody = [NSString stringWithFormat:NSLocalizedString(@"friend.somebodyAddWithName", @"%@ add you as a friend"), username];
+        notification.alertAction = NSLocalizedString(@"open", @"Open");
+        notification.timeZone = [NSTimeZone defaultTimeZone];
+    }
+#endif
+    
+    [_friendsVC reloadApplyView];
+}
 @end

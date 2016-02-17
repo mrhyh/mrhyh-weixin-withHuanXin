@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EMChatManagerBuddyDelegate.h"
 
+@interface TLRootViewController : UITabBarController<EMChatManagerBuddyDelegate>
 
-@interface TLRootViewController : UITabBarController
 
 @end
