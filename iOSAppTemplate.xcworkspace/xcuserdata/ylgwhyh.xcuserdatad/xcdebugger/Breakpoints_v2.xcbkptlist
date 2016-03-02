@@ -100,12 +100,12 @@
                   moduleName = "iOSAppTemplate"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hyh/GitHub/weixin-withHuanXin/iOSAppTemplate/SRC/Chat/TLChatBoxViewController.m"
-                  timestampString = "477390813.606697"
+                  timestampString = "478079629.695489"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "250"
                   endingLineNumber = "250"
-                  offsetFromSymbolStart = "911">
+                  offsetFromSymbolStart = "940">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -115,12 +115,12 @@
                   moduleName = "iOSAppTemplate"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hyh/GitHub/weixin-withHuanXin/iOSAppTemplate/SRC/Chat/TLChatBoxViewController.m"
-                  timestampString = "477390813.607166"
+                  timestampString = "478079629.696075"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "250"
                   endingLineNumber = "250"
-                  offsetFromSymbolStart = "919">
+                  offsetFromSymbolStart = "952">
                </Location>
             </Locations>
          </BreakpointContent>
