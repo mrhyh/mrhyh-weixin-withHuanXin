@@ -6,7 +6,7 @@
 
 Welcome to the weixin-withHuanXin wiki!
 
-首先非常感谢github上面tbl00c的iOSAppTemplate的项目，我是一次项目为模板，利用环信添加具体的具体的即时通讯功能的，现在才开始，这段时间都会持续更新中...由于时间问题，暂时不添加英文介绍了，thanks！
+首先非常感谢github上面tbl00c的iOSAppTemplate的项目，我是以此项目为模板，利用环信添加具体的具体的即时通讯功能的，现在才开始，这段时间都会持续更新中...由于时间问题，暂时不添加英文介绍了，thanks！
 
 我主要参考了gibhub上面的这两个项目，并且完全在第一个项目的基础上更新的，真的非常感谢你们！
 
