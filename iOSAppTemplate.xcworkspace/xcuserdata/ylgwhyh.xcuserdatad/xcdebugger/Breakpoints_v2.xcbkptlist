@@ -99,13 +99,13 @@
                   symbolName = "-[TLChatBoxViewController chatBoxMoreView:didSelectItem:]"
                   moduleName = "iOSAppTemplate"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyh/GitHub/weixin-withHuanXin/iOSAppTemplate/SRC/Chat/TLChatBoxViewController.m"
-                  timestampString = "478079629.695489"
+                  urlString = "file:///Users/hyh/%E5%BE%AE%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/A-%E8%BE%83%E5%AE%8C%E6%95%B4App/mrhyh-weixin-withHuanXin/iOSAppTemplate/SRC/Chat/TLChatBoxViewController.m"
+                  timestampString = "490110917.816341"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "250"
                   endingLineNumber = "250"
-                  offsetFromSymbolStart = "940">
+                  offsetFromSymbolStart = "902">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -114,13 +114,13 @@
                   symbolName = "-[TLChatBoxViewController chatBoxMoreView:didSelectItem:]"
                   moduleName = "iOSAppTemplate"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/hyh/GitHub/weixin-withHuanXin/iOSAppTemplate/SRC/Chat/TLChatBoxViewController.m"
-                  timestampString = "478079629.696075"
+                  urlString = "file:///Users/hyh/%E5%BE%AE%E4%BA%91%E5%90%8C%E6%AD%A5%E7%9B%98/A-%E8%BE%83%E5%AE%8C%E6%95%B4App/mrhyh-weixin-withHuanXin/iOSAppTemplate/SRC/Chat/TLChatBoxViewController.m"
+                  timestampString = "490110917.817062"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "250"
                   endingLineNumber = "250"
-                  offsetFromSymbolStart = "952">
+                  offsetFromSymbolStart = "910">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -323,13 +323,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "iOSAppTemplate/SRC/Root/TLRootViewController.m"
-            timestampString = "477390525.871138"
+            filePath = "iOSAppTemplate/SRC/FriendList/TLFriendsViewController.m"
+            timestampString = "487137877.927625"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
-            landmarkName = "-didReceiveBuddyRequest:message:"
+            startingLineNumber = "387"
+            endingLineNumber = "387"
+            landmarkName = "-reloadDataSource"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSAppTemplate/SRC/FriendList/TLFriendsViewController.m"
+            timestampString = "487137903.753091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
